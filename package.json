@@ -1,0 +1,21 @@
+{
+  "name": "front-end_architecture",
+  "version": "1.0.0",
+  "description": "前端架构",
+  "main": "index.js",
+  "author": "DavisYao",
+  "license": "MIT",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/DavisYao88/front-end_architecture.git"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.13",
+    "vue": "^3.2.38"
+  }
+}
