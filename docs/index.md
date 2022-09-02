@@ -11,7 +11,6 @@ hero:
   actions:
     - theme: brand
       text: 快来快来
-      link: /articles/组件库环境搭建
     - theme: alt
       text: View on Gitee
       link: https://gitee.com/geeksdidi
@@ -27,5 +26,4 @@ features:
     title: 这是一个修理图标
     details: cocococo
 ---
-
-
+### 需要掌握多少知识点才算高级开发呢
