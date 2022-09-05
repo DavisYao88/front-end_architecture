@@ -7,10 +7,8 @@ set -e
 npm run docs:build
 
 # 进入待发布的目录
-cd docs/.vitepress/dist
+cd docs/.vuepress/dist
 
-# 如果是发布到自定义域名
-# echo 'www.example.com' > CNAME
 
 git init
 git add -A
