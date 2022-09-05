@@ -53,7 +53,17 @@ export default defineUserConfig({
         },
         { text: "低代码", link: "/lowcode/" },
         { text: "源码共读", link: "/sourcecode/" },
-        { text: "实战篇", link: "/code-practice/" }
+        { 
+            text: "实战篇", 
+            link: "/code-practice/",
+            children:[
+                { text: "从零搭建组件库-vue2", link: "/code-practice/从零搭建组件库-vue2.md" },
+                { text: "从零搭建组件库-vue3", link: "/code-practice/从零搭建组件库-vue3.md" },
+                { text: "发布组件库到npm", link: "/code-practice/发布组件库到npm.md" },
+                { text: "基于乾坤的后台管理实践", link: "/code-practice/基于乾坤的后台管理实践.md" },
+                { text: "怎么开发一个Node命令行工具", link: "/code-practice/怎么开发一个Node命令行工具.md" },
+            ] 
+        }
     ],
     socialLinks: [
         { icon: 'github', link: 'https://github.com/DavisYao88/front-end_architecture.git' }
