@@ -9,9 +9,10 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "./deploy.sh"
+    "deploy": "./deploy.sh",
+    "precommit":"npm run deploy"
   },
   "devDependencies": {
     "vuepress": "^2.0.0-beta.51"
-  }
+  },
 }
