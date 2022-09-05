@@ -2,25 +2,16 @@
   "name": "front-end_architecture",
   "version": "1.0.0",
   "description": "前端架构",
-  "main": "index.js",
   "author": "DavisYao",
   "license": "MIT",
   "homepage": "https://davisyao88.github.io/front-end_architecture/",
-  "repository": {
-    "type": "github",
-    "url": "https://github.com/DavisYao88/front-end_architecture.git"
-  },
+  "repository": "https://github.com/DavisYao88/front-end_architecture.git",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "deploy": "./deploy.sh"
   },
   "devDependencies": {
-    "vitepress": "^0.22.4",
-    "vue": "^3.2.38"
-  },
-  "gitHooks": {
-    "pre-commit": "npm run deploy"
+    "vuepress": "^2.0.0-beta.51"
   }
 }

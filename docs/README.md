@@ -1,5 +1,5 @@
 ---
-
+sidebar: false
 hero:
   name: 东方小月的博客
   text: 随便写点啥.
@@ -24,4 +24,3 @@ features:
     title: 这是一个修理图标
     details: cocococo
 ---
-### 需要掌握多少知识点才算高级开发呢
