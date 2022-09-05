@@ -7,8 +7,14 @@ export default defineUserConfig({
   base:"/front-end_architecture/",
   port:3100,
   open:true,
+  
   theme:defaultTheme({
-    lastUpdated: '最后更新',
+    repoLabel: 'Github',
+    repo: 'https://github.com/DavisYao88/front-end_architecture',
+    lastUpdatedText:"最后更新",
+    contributorsText:"DavisYao",
+    editLink:false,
+    sidebarDepth:6,
     navbar: [
         {
             text:"文档",
@@ -36,9 +42,18 @@ export default defineUserConfig({
                 { text: "基于乾坤的后台管理实践", link: "/micro-fronteds/基于乾坤的后台管理实践.md" },
             ]
         },
+        
+        { 
+            text: "工程化", 
+            link: "/engineering/什么是工程化.md",
+            children:[
+                { text: "工程化管理工具", link: "/engineering/工程化管理工具.md" },
+                { text: "工程化构建工具", link: "/engineering/工程化构建工具.md" }
+            ]
+        },
         { text: "低代码", link: "/lowcode/" },
-        { text: "工程化", link: "/engineering/" },
-        { text: "源码共读", link: "/sourcecode/" }
+        { text: "源码共读", link: "/sourcecode/" },
+        { text: "实战篇", link: "/code-practice/" }
     ],
     socialLinks: [
         { icon: 'github', link: 'https://github.com/DavisYao88/front-end_architecture.git' }
