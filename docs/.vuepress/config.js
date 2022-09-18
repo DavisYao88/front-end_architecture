@@ -7,7 +7,14 @@ export default defineUserConfig({
   base:"/front-end_architecture/",
   port:3100,
   open:true,
-  
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@alias': '/public'
+            }
+        }
+    },
+
   theme:defaultTheme({
     repoLabel: 'Github',
     repo: 'https://github.com/DavisYao88/front-end_architecture',
@@ -30,9 +37,9 @@ export default defineUserConfig({
         }
     ],
     sidebar: [
-        
-        { 
-            text: "微前端", 
+
+        {
+            text: "微前端",
             link: "/micro-fronteds/什么是微前端.md" ,
             children:[
                 { text: "初探single-spa", link: "/micro-fronteds/初探single-spa.md" },
@@ -42,27 +49,27 @@ export default defineUserConfig({
                 { text: "基于乾坤的后台管理实践", link: "/micro-fronteds/基于乾坤的后台管理实践.md" },
             ]
         },
-        
-        { 
-            text: "工程化", 
+
+        {
+            text: "工程化",
             link: "/engineering/什么是工程化.md",
             children:[
-                { text: "工程化管理工具", link: "/engineering/工程化管理工具.md" },
-                { text: "工程化构建工具", link: "/engineering/工程化构建工具.md" }
+                // { text: "工程化管理工具", link: "/engineering/工程化管理工具.md" },
+                // { text: "工程化构建工具", link: "/engineering/工程化构建工具.md" }
             ]
         },
         { text: "低代码", link: "/lowcode/" },
         { text: "源码共读", link: "/sourcecode/" },
-        { 
-            text: "实战篇", 
+        {
+            text: "实战篇",
             link: "/code-practice/",
             children:[
-                { text: "从零搭建组件库-vue2", link: "/code-practice/从零搭建组件库-vue2.md" },
-                { text: "从零搭建组件库-vue3", link: "/code-practice/从零搭建组件库-vue3.md" },
-                { text: "发布组件库到npm", link: "/code-practice/发布组件库到npm.md" },
-                { text: "基于乾坤的后台管理实践", link: "/code-practice/基于乾坤的后台管理实践.md" },
-                { text: "怎么开发一个Node命令行工具", link: "/code-practice/怎么开发一个Node命令行工具.md" },
-            ] 
+                // { text: "从零搭建组件库-vue2", link: "/code-practice/从零搭建组件库-vue2.md" },
+                // { text: "从零搭建组件库-vue3", link: "/code-practice/从零搭建组件库-vue3.md" },
+                // { text: "发布组件库到npm", link: "/code-practice/发布组件库到npm.md" },
+                // { text: "基于乾坤的后台管理实践", link: "/code-practice/基于乾坤的后台管理实践.md" },
+                // { text: "怎么开发一个Node命令行工具", link: "/code-practice/怎么开发一个Node命令行工具.md" },
+            ]
         }
     ],
     socialLinks: [
