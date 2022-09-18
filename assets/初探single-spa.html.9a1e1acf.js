@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-05b640de","path":"/micro-fronteds/%E5%88%9D%E6%8E%A2single-spa.html","title":"","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1662343940000,"contributors":[{"name":"\u9ED1\u5C71\u8001\u5996","email":"hsly889@126.com","commits":1}]},"filePathRelative":"micro-fronteds/\u521D\u63A2single-spa.md"}');export{e as data};
